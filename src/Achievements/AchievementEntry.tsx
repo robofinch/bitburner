@@ -68,6 +68,11 @@ export function AchievementEntry({
               Acquired on {achievedOn}
             </Typography>
           )}
+          {!!achievement.NotInSteam && (
+            <Typography variant="caption" sx={{ fontSize: "12px", color: Settings.theme.primarydark }}>
+              No equivalent Steam achievement
+            </Typography>
+          )}
         </Box>
       </Box>
     </Box>
