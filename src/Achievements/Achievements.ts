@@ -429,6 +429,13 @@ export const achievements: Record<string, Achievement> = {
     Visible: () => canAccessBitNodeFeature(6),
     Condition: () => Player.bladeburner !== null && Player.bladeburner.skillPoints >= 100000,
   },
+  BLADEBURNER_ORIGINAL_CHARACTER: {
+    ...achievementData.BLADEBURNER_ORIGINAL_CHARACTER,
+    Icon: "BLADEORIGINALCHARACTER",
+    NotInSteam: true,
+    Visible: () => canAccessBitNodeFeature(6),
+    Condition: () => Player.bladeburner !== null,
+  },
   "4S": {
     ...achievementData["4S"],
     Icon: "4S",

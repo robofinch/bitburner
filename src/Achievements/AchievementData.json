@@ -336,6 +336,11 @@
       "Name": "You should really spend those.",
       "Description": "Have 100 000 unspent bladeburner skill points."
     },
+    "BLADEBURNER_ORIGINAL_CHARACTER": {
+      "ID": "BLADEBURNER_ORIGINAL_CHARACTER",
+      "Name": "Original Character",
+      "Description": "Make your own bladeburner achievement."
+    },
     "4S": {
       "ID": "4S",
       "Name": "4S",
