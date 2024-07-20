@@ -25,8 +25,9 @@ export function AchievementCategory({
   // Most parts of the four categories in the old code were very similar (besides the content of
   // AccordianDetails), with the Acquired category having a few differences,
   // although both the Acquired and Locked categories also had an extra prop in the AccordianDetails.
+  // The 264px minWidth feels scuffed, but fixes an edge case.
   return (
-    <Accordion defaultExpanded={!!allAchievements} disableGutters square>
+    <Accordion defaultExpanded={!!allAchievements} disableGutters square sx={{ minWidth: "264px" }}>
       <AccordionSummary>
         {allAchievements ? (
           <Typography variant="h5" sx={{ my: 1 }}>

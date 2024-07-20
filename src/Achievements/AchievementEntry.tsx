@@ -88,7 +88,7 @@ export function AchievementEntry({
                   alignItems: "center",
                 }}
               >
-                <LinkOffIcon sx={{ fontSize: "20px", color: mainColor, marginRight: 1 }} />
+                <LinkOffIcon sx={{ fontSize: "20px", color: captionColor, marginRight: 1 }} />
                 <Typography variant="caption" sx={{ fontSize: "12px", color: captionColor }}>
                   No equivalent Steam achievement
                 </Typography>
@@ -104,7 +104,7 @@ export function AchievementEntry({
             </Typography>
           }
         >
-          <Box marginLeft={"auto"} marginBottom={"auto"} marginTop={0.5} marginRight={0.5}>
+          <Box sx={{ marginLeft: "auto", marginBottom: "auto", marginRight: 0.5, marginTop: 0.5 }}>
             {achievement.NotInSteam ? (
               <LinkOffIcon sx={{ fontSize: "20px", color: iconColor }} />
             ) : (
