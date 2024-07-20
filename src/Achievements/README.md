@@ -2,7 +2,7 @@
 
 - Add a .svg in `./assets/Steam/achievements/real`
 - If making a Steam achievement, create the achievement in Steam Dev Portal
-- Run `sh ./assets/Steam/achievements/pack-for-web.sh`
+- Run `sh ./assets/Steam/achievements/pack-for-web.sh`, or `pack-for-web-mac.sh` for MacOS
 - Add an entry in `./src/Achievements/AchievementData.json` -> achievements
   - It should match the information for the Steam achievement, if applicable
   - Order the new achievement entry thematically
