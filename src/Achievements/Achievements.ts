@@ -80,19 +80,16 @@ export const achievements: Record<string, Achievement> = {
   [FactionName.CyberSec.toUpperCase()]: {
     ...achievementData[FactionName.CyberSec.toUpperCase()],
     Icon: "CSEC",
-    NotInSteam: true, // Temporary, for testing
     Condition: () => Player.factions.includes(FactionName.CyberSec),
   },
   [FactionName.NiteSec.toUpperCase()]: {
     ...achievementData[FactionName.NiteSec.toUpperCase()],
     Icon: FactionName.NiteSec,
-    NotInSteam: true, // Temporary, for testing
     Condition: () => Player.factions.includes(FactionName.NiteSec),
   },
   THE_BLACK_HAND: {
     ...achievementData.THE_BLACK_HAND,
     Icon: "TBH",
-    NotInSteam: true, // Temporary, for testing
     Condition: () => Player.factions.includes(FactionName.TheBlackHand),
   },
   [FactionName.BitRunners.toUpperCase()]: {
@@ -663,7 +660,6 @@ export const achievements: Record<string, Achievement> = {
     ...achievementData.DEVMENU,
     Icon: "SF-1",
     Secret: true,
-    NotInSteam: true, // Temporary, for testing
     Condition: () => Player.exploits.includes(Exploit.YoureNotMeantToAccessThis),
   },
   RAINBOW: {
